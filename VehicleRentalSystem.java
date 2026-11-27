@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class VehicleRenntalSystem {
+public class VehicleRentalSystem {
 
     static Vehicle getVehicle(int vehicleType) {
         if (vehicleType < 1 || vehicleType > 3) {
@@ -37,6 +37,7 @@ public class VehicleRenntalSystem {
 
 abstract class Vehicle {
 
+    @SuppressWarnings("FieldMayBeFinal")
     private double dailyRate;
 
     public Vehicle(double dailyRate) {
